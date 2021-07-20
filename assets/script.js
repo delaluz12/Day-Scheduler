@@ -3,7 +3,7 @@ $(document).ready(function () {
     //display current day
     var currentDate;
     currentDate = moment().format('dddd, MMMM Do')
-    console.log(currentDate);
+    
     $('#currentDay').text(currentDate);
 
     //on click function to grab text and save to local storage
@@ -28,8 +28,6 @@ $(document).ready(function () {
         //loop through each value of timeblock to comare and make necessary css changes
         $('.row').each(function(){
             var rowValue = parseInt($(this).attr('value'));
-            console.log (rowValue);
-
             //check if block is in past therefore currentHour will be greater
              if(currentHour > rowValue){
                  $(this).children('.form-control').addClass('past');

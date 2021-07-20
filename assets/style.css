@@ -26,7 +26,7 @@ textarea{
 }
 
 .time-block{
-  text-align: center;
+  text-align: distribute;
   border-radius: 15px;
 }
 
@@ -40,10 +40,6 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-}
-.hour-text {
-  text-justify: distribute;
-  
 }
 
 .past {
